@@ -1,0 +1,16 @@
+{
+  "name": "understanding-typescript",
+  "version": "1.0.0",
+  "description": "Udemy course about Typescript",
+  "author": "Andre Cantarino",
+  "licence": "ISC",
+  "main": "app.js",
+  "scripts": {
+    "test": "exit 1",
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "lite-server": "^2.6.1",
+    "typescript": "4.7.3"
+  }
+}
