@@ -1,47 +1,19 @@
-/** EMUN */
-// const ADMIN = 0;
-// const READ_ONLY = 1;
-// const AUTHOR = 2;
-var Role;
-(function (Role) {
-    Role[Role["ADMIN"] = 5] = "ADMIN";
-    Role[Role["READ_ONLY"] = 6] = "READ_ONLY";
-    Role[Role["AUTHOR"] = 7] = "AUTHOR";
-})(Role || (Role = {}));
-;
-/** OBJECT */
-// const person: {
-//   name: string,
-//   age: number,
-//   hobbies: string[],
-//   role: [number, string] // tuple
-// } = {
-//   name: "Andre",
-//   age: 30,
-//   hobbies: ['sports', 'cooking'],
-//   role: [2, 'author'],
-// }
-var person = {
-    name: "Andre",
-    age: 30,
-    hobbies: ['sports', 'cooking'],
-    role: Role.ADMIN
-};
-/** ARRAYS */
-/** any[] will define the array of different types */
-var anyArray;
-anyArray = ['sports', 1];
-var favoriteActivities;
-favoriteActivities = ['sports'];
-/** TUPLES */
-// person.role.push('admin');
-// person.role[1] = 10;
-/** PRINTS */
-console.log(person.name);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby.toUpperCase());
+function combine(input1, input2) {
+    var result;
+    if (typeof input1 === 'number' && typeof input2 === 'number') {
+        result = input1 + input2;
+    }
+    else {
+        result = input1.toString() + input2.toString();
+    }
+    return result;
 }
-if (person.role === Role.ADMIN) {
-    console.log('ADMIN');
-}
+var combineAges = combine(30, 20);
+console.log(combineAges);
+var combineNames = combine('Max', 'Anna');
+console.log(combineNames);
+// const number1 = 5;
+// const number2 = 2.8;
+// const printResult = true;
+// const resultPhrase = 'Result is: '
+// add(number1, number2, printResult, resultPhrase);
