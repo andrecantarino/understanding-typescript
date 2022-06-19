@@ -1,9 +1,9 @@
 "use strict";
-exports.__esModule = true;
-var num1 = document.getElementById("num1");
-var num2 = document.getElementById("num2");
-var button = document.querySelector("button");
-var add = function (num1, num2) {
+Object.defineProperty(exports, "__esModule", { value: true });
+const num1 = document.getElementById("num1");
+const num2 = document.getElementById("num2");
+const button = document.querySelector("button");
+const add = (num1, num2) => {
     return num1 + num2;
 };
 button.addEventListener("click", function () {

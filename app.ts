@@ -1,1 +1,3 @@
-console.log('app');
+const username = 'Max';
+
+console.log(username);

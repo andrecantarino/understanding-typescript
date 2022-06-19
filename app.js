@@ -1,1 +1,3 @@
-console.log('app');
+"use strict";
+const username = 'Max';
+console.log(username);
